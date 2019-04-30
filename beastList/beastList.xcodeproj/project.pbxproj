@@ -14,6 +14,8 @@
 		D0B2E7D12273236A00840E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B2E7CF2273236A00840E5A /* LaunchScreen.storyboard */; };
 		D0B2E7DC2273236A00840E5A /* beastListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2E7DB2273236A00840E5A /* beastListTests.swift */; };
 		D0B2E7E72273236A00840E5A /* beastListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2E7E62273236A00840E5A /* beastListUITests.swift */; };
+		D0B2E8E12277806A00840E5A /* BeastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2E8E02277806A00840E5A /* BeastTableViewCell.swift */; };
+		D0B2E8E3227783F200840E5A /* BeastCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2E8E2227783F200840E5A /* BeastCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D0B2E7E22273236A00840E5A /* beastListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beastListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B2E7E62273236A00840E5A /* beastListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beastListUITests.swift; sourceTree = "<group>"; };
 		D0B2E7E82273236A00840E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B2E8E02277806A00840E5A /* BeastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastTableViewCell.swift; sourceTree = "<group>"; };
+		D0B2E8E2227783F200840E5A /* BeastCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		D0B2E7C52273236800840E5A /* beastList */ = {
 			isa = PBXGroup;
 			children = (
+				D0B2E8E02277806A00840E5A /* BeastTableViewCell.swift */,
 				D0B2E7C62273236800840E5A /* AppDelegate.swift */,
 				D0B2E7C82273236800840E5A /* ViewController.swift */,
 				D0B2E7CA2273236800840E5A /* Main.storyboard */,
 				D0B2E7CD2273236A00840E5A /* Assets.xcassets */,
 				D0B2E7CF2273236A00840E5A /* LaunchScreen.storyboard */,
 				D0B2E7D22273236A00840E5A /* Info.plist */,
+				D0B2E8E2227783F200840E5A /* BeastCellDelegate.swift */,
 			);
 			path = beastList;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B2E8E3227783F200840E5A /* BeastCellDelegate.swift in Sources */,
 				D0B2E7C92273236800840E5A /* ViewController.swift in Sources */,
+				D0B2E8E12277806A00840E5A /* BeastTableViewCell.swift in Sources */,
 				D0B2E7C72273236800840E5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

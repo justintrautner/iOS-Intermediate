@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  agingPeople
+//  rainbowRoad
 //
 //  Created by Justin Trautner on 4/26/19.
 //  Copyright © 2019 Justin Trautner. All rights reserved.
@@ -10,14 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var names = ["Rodrigo","Maria","Tiago","Ana","Antonio","Paulo", "Mariana","Laura","Rafael","Diego","Eva","Camila"]
+    let colors = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.purple]
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-
     }
 
 
@@ -26,20 +25,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "protoCell", for:  indexPath)
-        
-        
-        cell.textLabel?.text = names[indexPath.row]
-        
-        cell.detailTextLabel?.text = String(Int.random(in: 5...95)) + " years old"
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "protoCell", for: indexPath)
+        cell.backgroundColor = colors[indexPath.row]
         return cell
-        
     }
 }
 

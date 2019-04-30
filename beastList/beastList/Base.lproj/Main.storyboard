@@ -29,15 +29,29 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NTU-WZ-9KO">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="protoCell" id="l3a-1p-6BO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BeastTableViewCell" id="l3a-1p-6BO" customClass="BeastTableViewCell" customModule="beastList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l3a-1p-6BO" id="KuS-2h-68b">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-Ie-5G0">
+                                                    <rect key="frame" x="321" y="6" width="38" height="31.5"/>
+                                                    <state key="normal" title="Show"/>
+                                                    <connections>
+                                                        <action selector="showButtonPressed:" destination="l3a-1p-6BO" eventType="touchUpInside" id="bLg-0J-sSv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YFG-Ie-5G0" firstAttribute="top" secondItem="KuS-2h-68b" secondAttribute="top" constant="6" id="Mym-95-Hkl"/>
+                                                <constraint firstAttribute="bottom" secondItem="YFG-Ie-5G0" secondAttribute="bottom" constant="6" id="qNg-Re-Hr5"/>
+                                                <constraint firstAttribute="trailing" secondItem="YFG-Ie-5G0" secondAttribute="trailing" constant="16" id="vn1-nE-SUM"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -53,16 +67,29 @@
                                     <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwe-Y6-4ct"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show task here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETn-iG-U85">
+                                <rect key="frame" x="16" y="566" width="343" height="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ETn-iG-U85" secondAttribute="bottom" constant="20" id="24A-bH-yKb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOc-6j-W9V" secondAttribute="trailing" constant="8" id="8fO-9n-aoa"/>
                             <constraint firstItem="GFM-dQ-Fwb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="9kO-gq-Mhb"/>
                             <constraint firstItem="NTU-WZ-9KO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Er6-Xf-PhB"/>
-                            <constraint firstItem="NTU-WZ-9KO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FrK-Te-5WC"/>
+                            <constraint firstItem="NTU-WZ-9KO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-91" id="FrK-Te-5WC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ETn-iG-U85" secondAttribute="trailing" constant="16" id="IeM-FQ-Nhc"/>
                             <constraint firstItem="NTU-WZ-9KO" firstAttribute="top" secondItem="GFM-dQ-Fwb" secondAttribute="bottom" constant="8" id="Ma1-Rn-LdC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ETn-iG-U85" secondAttribute="trailing" constant="16" id="OAz-LF-6wv"/>
+                            <constraint firstItem="ETn-iG-U85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RPV-pL-TrF"/>
                             <constraint firstItem="GFM-dQ-Fwb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UCj-Mf-kPo"/>
                             <constraint firstItem="FOc-6j-W9V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UOX-K7-ffd"/>
+                            <constraint firstItem="ETn-iG-U85" firstAttribute="top" secondItem="NTU-WZ-9KO" secondAttribute="bottom" constant="-10" id="tcR-VD-Fhq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ETn-iG-U85" secondAttribute="bottom" constant="20" id="xF2-lG-NhI"/>
+                            <constraint firstItem="ETn-iG-U85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yeI-dL-9pM"/>
                             <constraint firstItem="NTU-WZ-9KO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zzg-5c-CAs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,6 +97,7 @@
                     <connections>
                         <outlet property="inputField" destination="GFM-dQ-Fwb" id="C9j-VH-kLd"/>
                         <outlet property="tableView" destination="NTU-WZ-9KO" id="gxc-0H-cg9"/>
+                        <outlet property="taskLabel" destination="ETn-iG-U85" id="HCl-uq-OIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
