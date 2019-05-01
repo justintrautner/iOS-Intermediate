@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NorthEastSouthWest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjj-bc-7VZ">
+                                <rect key="frame" x="167.5" y="20" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="North">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ruw-GG-p6p" kind="presentation" identifier="North" id="zIw-9x-vJB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWR-M4-bl2">
+                                <rect key="frame" x="16" y="318.5" width="35" height="30"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="West">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ruw-GG-p6p" kind="presentation" identifier="West" id="auy-Q6-RF1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72U-bn-xPm">
+                                <rect key="frame" x="167" y="629" width="41" height="30"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="South">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ruw-GG-p6p" kind="presentation" identifier="South" id="1gP-3o-HFl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-aW-mp5">
+                                <rect key="frame" x="329" y="318.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="East">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ruw-GG-p6p" kind="presentation" identifier="East" id="xkZ-aC-5fc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wjj-bc-7VZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0cz-1i-q19"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vf9-aW-mp5" secondAttribute="trailing" constant="16" id="1qP-fK-fq2"/>
+                            <constraint firstItem="cWR-M4-bl2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="978-cV-NDe"/>
+                            <constraint firstItem="wjj-bc-7VZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bxo-pp-Ybu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="72U-bn-xPm" secondAttribute="bottom" constant="8" id="DKD-VO-Lfd"/>
+                            <constraint firstItem="Vf9-aW-mp5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GQc-Un-SbC"/>
+                            <constraint firstItem="72U-bn-xPm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUv-c9-xSb"/>
+                            <constraint firstItem="cWR-M4-bl2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vl8-gB-a0R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ped-ss-CtU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="122.78860569715144"/>
+        </scene>
+        <!--Direction Controller-->
+        <scene sceneID="lHH-ap-oUn">
+            <objects>
+                <viewController id="ruw-GG-p6p" customClass="DirectionController" customModule="NorthEastSouthWest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xyz-Bu-DyP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVP-Y5-QPZ">
+                                <rect key="frame" x="107.5" y="278.5" width="160" height="110"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="6SO-bL-1E9"/>
+                                    <constraint firstAttribute="height" constant="110" id="DSH-Ja-Z1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sr5-Oh-Dfr">
+                                <rect key="frame" x="161.5" y="617" width="52" height="30"/>
+                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Unwind">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JFK-bq-J10" kind="unwind" unwindAction="unwindToVc:" id="All-Rb-WOR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TVP-Y5-QPZ" firstAttribute="centerY" secondItem="xyz-Bu-DyP" secondAttribute="centerY" id="GR7-rG-529"/>
+                            <constraint firstItem="yHT-cf-JyV" firstAttribute="bottom" secondItem="Sr5-Oh-Dfr" secondAttribute="bottom" constant="20" id="SvB-UU-z57"/>
+                            <constraint firstItem="TVP-Y5-QPZ" firstAttribute="centerX" secondItem="xyz-Bu-DyP" secondAttribute="centerX" id="hT3-zK-tMU"/>
+                            <constraint firstItem="Sr5-Oh-Dfr" firstAttribute="centerX" secondItem="xyz-Bu-DyP" secondAttribute="centerX" id="rE1-hU-ekR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yHT-cf-JyV"/>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="TVP-Y5-QPZ" id="2Un-Rp-dLc"/>
+                        <segue destination="JFK-bq-J10" kind="unwind" identifier="unwindToVc" unwindAction="unwindToVcWithSegue:" id="Sn5-7C-NfW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaS-F3-PVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JFK-bq-J10" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xkZ-aC-5fc"/>
+    </inferredMetricsTieBreakers>
+</document>
